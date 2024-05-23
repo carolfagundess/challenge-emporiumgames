@@ -6,5 +6,5 @@ getBuscarProdutosApi()
 async function getBuscarProdutosApi(){
     const res = await fetch(endPointApi);
     produtos = await res.json();
-    console.log(produtos);
+    console.table(produtos);
 }
