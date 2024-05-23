@@ -1,5 +1,5 @@
 let produtos = []
-const endPointApi = 'https://carolfagundess.github.io/api_emporium/produtos.json';
+const endPointApi = 'https://carolfagundess.github.io/challenge-emporiumgames/produtos.json';
 getBuscarProdutosApi()
 
 //assincrona para esperar por uma promessa
