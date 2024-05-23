@@ -1,22 +1,22 @@
 [
     {
         "titulo": "Valorant",
-        "preco": 0,
+        "preco": 0.00,
         "imagem": "https://cdn2.steamgriddb.com/icon_thumb/9e82757e9a1c12cb710ad680db11f6f1.png"
     },
     {
         "titulo": "The Sims 4",
-        "preco": 35,
+        "preco": 35.00,
         "imagem": "https://m.media-amazon.com/images/M/MV5BZWI3YWI0ZmQtYmU1ZS00YmM2LWI1MWEtYWQzMTVmZmY2MmJjXkEyXkFqcGdeQXVyNzQwMzAwNTI@._V1_.jpg"
     },
     {
         "titulo": "GTA V",
-        "preco": 67,
+        "preco": 67.00,
         "imagem": "https://img.gta5-mods.com/q75/images/grand-theft-auto-v-boot-logo/b06535-gtav_logo.png"
     },
     {
         "titulo": "The Last Of Us",
-        "preco": 250,
+        "preco": 250.00,
         "imagem": "https://seeklogo.com/images/T/the-last-of-us-logo-0E1DA5A854-seeklogo.com.png"
     }
 ]

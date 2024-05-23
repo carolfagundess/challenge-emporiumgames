@@ -1,5 +1,3 @@
-
-
 let produtos = []
 const endPointApi = 'https://carolfagundess.github.io/challenge-emporiumgames/produtos.json';
 getBuscarProdutosApi()
@@ -8,6 +6,5 @@ getBuscarProdutosApi()
 async function getBuscarProdutosApi(){
     const res = await fetch(endPointApi);
     produtos = await res.json();
-    console.table(produtos);
     exibirProdutos(produtos);
 }
