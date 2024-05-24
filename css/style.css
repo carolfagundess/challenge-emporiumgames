@@ -1,17 +1,14 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
-  --cor--primaria: #00215E;
+  --cor--primaria: #090979;
   --cor--secundaria: #074173;
-  --cor--cards: #03318C;
+  --cor--cards: #090979;
   --cor--terciaria: #ffff;
 
   --fonte-primaria: "Press Start 2P", Courier, monospace;
-  --fonte-secundaria: "IBM Plex Mono",Courier, monospace;
+  --fonte-secundaria: "IBM Plex Mono", Courier, monospace;
 }
 
 * {
@@ -25,9 +22,8 @@ body {
   font-family: var(--fonte-primaria);
 }
 
-
 .texto_cabecalho {
-  background-color: var(--cor--primaria);
+  background-color: #090979;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -41,37 +37,45 @@ body {
   font-weight: 500;
 }
 
-
-.produtos{
-    display: flex;
-    justify-content: space-evenly;
-    height: 100vh;
-    padding-top: 6%;
-    text-align: center;
-    padding-right: 100px;
+.produtos {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding-top: 6%;
+  text-align: center;
+  padding-right: 100px;
+  background-color: var(--cor--terciaria);
 }
 
-.produtos_titulo{
+.produtos_estante {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.produtos_titulo {
   font-size: 20px;
   padding: 0% 0% 40px 0%;
 }
 
-#produtos_itens{
+#produtos_itens {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  background-color: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
-  padding: 30px;
+  padding: 40px;
   border-radius: 10px;
   box-shadow: -20px 20px 30px rgba(0, 0, 0, 0.5);
 }
 
-.card{
+.card {
   list-style: none;
   font-size: 10px;
   background-color: var(--cor--cards);
   padding: 10px;
   color: #ffff;
-  border: 4px solid;
+  border: 2px solid;
   border-radius: 6%;
   border-color: black;
   font-family: var(--fonte-secundaria);
@@ -79,14 +83,14 @@ body {
   text-align: justify;
 }
 
-.card--infos-preco{
+.card--infos-preco {
   display: flex;
   font-weight: 800;
   padding: 8px 0;
   justify-content: space-between;
 }
 
-.item_imagem{
+.item_imagem {
   width: 176px;
   height: 174px;
   border: 3px solid;
@@ -95,23 +99,32 @@ body {
   background-color: #000;
 }
 
-.item_name{
+.item_name {
   padding: 5px;
 }
 
-.item_preco{
+.item_preco {
   padding: 5%;
   font-weight: 500;
 }
 
+.areaAdicionarProduto {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-family: var(--fonte-secundaria);
+  padding-top: 150px;
+  align-items: center;
+  justify-content: center;
+}
 
-.formulario_adicionar{
+.formulario_adicionar {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
-.formulario_campo{
+.formulario_campo {
   width: 392px;
   height: 48px;
   border: 2px solid var(--cor--secundaria);
@@ -121,23 +134,31 @@ body {
   color: var(--cor--secundaria);
 }
 
-.botao{
-  margin-top: 50px;
+.botao_index {
+  margin-top: 30px;
   align-items: start;
-  width: 184px;
-  height: 40px;
+  width: 190px;
+  height: 50px;
   justify-content: space-around;
   border: 2px solid var(--cor--secundaria);
   border-radius: 10px;
   font-family: var(--fonte-secundaria);
+  font-weight: 500;
 }
 
-#enviar{
+.botao_index a {
+  text-decoration: none;
+  color: #090979;
+  padding: 80px 5px;
+  text-align: center;
+}
+
+#enviar {
   background-color: var(--cor--secundaria);
   color: var(--cor--terciaria);
 }
 
-#limpar{
+#limpar {
   color: var(--cor--secundaria);
 }
 
@@ -145,7 +166,7 @@ body {
   background-color: var(--cor--primaria);
   color: var(--cor--terciaria);
   text-align: center;
-  padding: 1.6% 0%;
+  padding: 1% 0%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -155,16 +176,8 @@ body {
   font-size: 10px;
 }
 
-.titulo_rodape{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-@media(max-width: 800px){
-  .produtos{
+@media (max-width: 800px) {
+  .produtos {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -173,19 +186,17 @@ body {
     margin: 0;
   }
 
-  .produtos_estante{
+  .produtos_estante {
     padding-top: 100px;
   }
 }
 
-@media(max-width: 400px){
-
-  body{
+@media (max-width: 400px) {
+  body {
     width: 100%;
   }
 
-  .produtos_formulario{
+  .produtos_formulario {
     height: auto;
-
   }
 }

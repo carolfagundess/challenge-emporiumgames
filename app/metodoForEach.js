@@ -10,7 +10,7 @@ function exibirProdutos(listaProdutos) {
         <div class="card--infos">
             <p>${produto.titulo}</p>
             <div class="card--infos-preco">
-                <p>R$ ${produto.preco}.00</p>
+                <p>R$ ${produto.preco}</p>
                 <img src="/assets/Vector.svg" alt="botao de excluir">
             </div>
         </div>
