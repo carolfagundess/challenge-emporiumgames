@@ -3,8 +3,8 @@
 
 :root {
   --cor--primaria: #090979;
-  --cor--secundaria: #074173;
-  --cor--cards: #090979;
+  --cor--secundaria: #03318C;
+  --cor--cards: #03318C;
   --cor--terciaria: #ffff;
 
   --fonte-primaria: "Press Start 2P", Courier, monospace;
@@ -134,7 +134,7 @@ body {
   color: var(--cor--secundaria);
 }
 
-.botao_index {
+.botao {
   margin-top: 30px;
   align-items: start;
   width: 190px;
@@ -146,20 +146,21 @@ body {
   font-weight: 500;
 }
 
-.botao_index a {
-  text-decoration: none;
-  color: #090979;
-  padding: 80px 5px;
-  text-align: center;
+.botao:hover{
+  background-color: var(--cor--terciaria);
 }
 
-#enviar {
+#padraoBotao {
   background-color: var(--cor--secundaria);
   color: var(--cor--terciaria);
 }
 
-#limpar {
+#padraoBotaoDois {
   color: var(--cor--secundaria);
+}
+
+a{
+  text-align: none;
 }
 
 .rodape {
