@@ -1,0 +1,52 @@
+.formulario_adicionar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+  
+  .formulario_campo {
+    width: 392px;
+    height: 25px;
+    border: 2px solid var(--cor--secundaria);
+    border-radius: 15px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    color: var(--cor--secundaria);
+    padding: 10px 15px;
+  }
+  
+  #botoes-formulario{
+    margin-top: 100px;
+  }
+
+  .botao {
+    width: 190px;
+    height: 50px;
+    border: 2px solid var(--cor--secundaria);
+    border-radius: 10px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 800;
+    border: 3px solid;
+    border-color: #25259c;
+  }
+  
+  .botao:hover{
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  
+  .botao:active {
+    transform: scale(0.95); /* Simula o efeito de clicar */
+  }
+  
+  #padraoBotao {
+    background-color: var(--cor--secundaria);
+    color: var(--cor--terciaria);
+  }
+  
+  #padraoBotaoDois {
+    color: var(--cor--secundaria);
+  }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style-form.css">
     <title>✨Emporium Games</title>
 </head>
 
@@ -20,7 +21,7 @@
     <main class="produtos">
         <section class="produtos_estante">
             <h2 class="produtos_titulo">MEUS PRODUTOS</h2>
-            <div id="produtos_itens">
+            <div id="produtos_itens" data-lista>
                 <!-- <div class="card">
                     <img class="item_imagem" src="/assets/valorant-1591100060180_v2_4x3.jpg" alt="Valorant">
                     <div class="card--infos">
@@ -33,18 +34,21 @@
                 </div> -->
             </div>
             <section class="areaAdicionarProduto">
-                    <button class="botao" id="padraoBotao">Cadastrar Produto</button>
-                <button class="botao" id="padraoBotaoDois">Produtos em formato json</button>
-                <button class="botao" id="padraoBotao">Código em GITHUB</button>
+                <a target="_blank" href="/cadastroProduto.html"><button class="botao" id="padraoBotao">
+                        Cadastrar produtos
+                    </button></a>
+                <a target="_blank" href=""><button class="botao" id="padraoBotao">
+                        GitHub do projeto
+                    </button></a>
             </section>
         </section>
     </main>
 
     <footer class="rodape">
         <span class="span">DESENVOLVIDO POR CAROLINA</span>
-        <span>BRAZIL, 2024</span>
+        <span>since 2024</span>
     </footer>
-    <script src="app/main.js"></script>
-    <script src="app/metodoForEach.js"></script>
+    <script src="app/metodoForEach.js" type="module"></script>
 </body>
+
 </html>

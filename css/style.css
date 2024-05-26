@@ -22,12 +22,20 @@ body {
   font-family: var(--fonte-primaria);
 }
 
-.texto_cabecalho {
+header{
   background-color: #090979;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.texto_cabecalho {
   display: flex;
   gap: 10px;
   justify-content: center;
-  padding: 20px;
+  padding: 30px;
   margin: 0%;
   color: var(--cor--terciaria);
   font-size: 600;
@@ -40,11 +48,10 @@ body {
 .produtos {
   display: flex;
   gap: 10px;
-  justify-content: space-evenly;
+  justify-content: center;
   height: 100vh;
-  padding-top: 6%;
+  padding-top: 4%;
   text-align: center;
-  padding-right: 100px;
   background-color: var(--cor--terciaria);
 }
 
@@ -56,7 +63,7 @@ body {
 
 .produtos_titulo {
   font-size: 20px;
-  padding: 0% 0% 40px 0%;
+  padding: 0% 0% 30px 0%;
 }
 
 #produtos_itens {
@@ -81,6 +88,7 @@ body {
   font-family: var(--fonte-secundaria);
   font-size: 14px;
   text-align: justify;
+  font-weight: 600;
 }
 
 .card--infos-preco {
@@ -113,54 +121,16 @@ body {
   flex-direction: row;
   gap: 30px;
   font-family: var(--fonte-secundaria);
-  padding-top: 150px;
+  padding: 60px 0px;
   align-items: center;
   justify-content: center;
 }
 
-.formulario_adicionar {
+.container-envio-concluido{
   display: flex;
   flex-direction: column;
-  gap: 25px;
-}
-
-.formulario_campo {
-  width: 392px;
-  height: 48px;
-  border: 2px solid var(--cor--secundaria);
-  border-radius: 15px;
-  font-family: var(--fonte-secundaria);
-  font-weight: 400;
-  color: var(--cor--secundaria);
-}
-
-.botao {
-  margin-top: 30px;
-  align-items: start;
-  width: 190px;
-  height: 50px;
-  justify-content: space-around;
-  border: 2px solid var(--cor--secundaria);
-  border-radius: 10px;
-  font-family: var(--fonte-secundaria);
-  font-weight: 500;
-}
-
-.botao:hover{
-  background-color: var(--cor--terciaria);
-}
-
-#padraoBotao {
-  background-color: var(--cor--secundaria);
-  color: var(--cor--terciaria);
-}
-
-#padraoBotaoDois {
-  color: var(--cor--secundaria);
-}
-
-a{
-  text-align: none;
+  gap: 60px;
+  align-items: center;
 }
 
 .rodape {
