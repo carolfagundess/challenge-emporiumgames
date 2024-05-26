@@ -1,7 +1,9 @@
+const api = "https://json-server-emporium.vercel.app/produtos";
+
 //assincrona para esperar por uma promessa
 //REQUISAO GET
 async function getListaProdutos() {
-  const res = await fetch("http://localhost:3000/produtos");
+  const res = await fetch(api);
   const jogos = await res.json();
   console.log(jogos);
 
@@ -10,7 +12,7 @@ async function getListaProdutos() {
 
 //REQUISAO POST
 async function criaProduto(titulo, imagem, preco) {
-  const conexao = await fetch("http://localhost:3000/produtos", {
+  const conexao = await fetch(api, {
     method: "POST",
     headers: {
       //que tipo de arquivo que esta sendo usado
